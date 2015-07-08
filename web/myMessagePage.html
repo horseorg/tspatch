@@ -1,0 +1,293 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="renderer" content="webkit">
+<meta name="keywords" content="Webkit2"/>
+<meta name="description" content="Webkit3" />
+<link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+<title>碎片网</title><meta content="no-transform " http-equiv="Cache-Control" />
+<meta content="format=html5; " http-equiv="mobile-agent" />
+<link rel="stylesheet" type="text/css" href="main.css" />
+<link rel="stylesheet" type="text/css" href="css/myMessage3.css" />
+<link rel="stylesheet" type="text/css" href="css/myMessageCss.css" />
+<link rel="stylesheet" type="text/css" href="css/myMessageCss2.css" />
+<link rel="stylesheet" type="text/css" href="css/myMessageCss4.css" />
+</head>    
+<body>
+<div>
+    <div class="head_bar">
+    
+    <div class="head_bar_con">
+<!--         <a href="http://www.tspatch.com" class="logo_index">时间碎片</a> -->
+        <span class="slogan_v2">你的生活助手</span>
+    </div>
+</div>
+<div >
+<div id="header2" style="width:100%;height:40px;background:black;">	
+				<div style="width:70%;margin:0 auto;">
+					<ul>
+					  <li style="border:1px solid blue;">
+						<a href="#" style="position:relative;float:left;padding:10px 14px;color:#fff">我的首页</a>
+					  </li>
+					  <li>
+						<a href="#" style="position:relative;float:left;padding:10px 14px;color:#fff">我的资料</a>
+					  </li>
+					  <li>
+						<a href="#" style="position:relative;float:left;padding:10px 14px;color:#fff">支付设置</a>
+					  </li>
+					  <li>
+						<a href="#" style="position:relative;float:left;padding:10px 14px;color:#fff">安全设置</a>
+					  </li>
+					  <li>
+						<a href="#" style="position:relative;float:left;padding:10px 14px;color:#fff">交易记录</a>
+					  </li>
+					</ul>	
+				</div>
+			</div>
+			<div style="clear:both;"></div>
+    <span class="pics_pre" onclick="pre_pic()" style="display:none;"></span>
+    <span class="pics_next" onclick="next_pic()" style="display:none;"></span>
+    <span class="bg_up"></span>
+    <span class="bg_down"></span>
+</div>         
+
+    <div class="rooms_show" id="load_Ajax_IndexRecommend">
+   <!--内容 -->
+		<div id="Content" style="width:70%;background:#F5F5F5;height:500px;margin:0 auto;">
+			<div id="Content-Left" style="width:25%;background:;height:100%;float: left;">
+				<div style="border:1px solid gray;">
+				<div style="width:100%;height:190px;">
+					<img src="https://z2.muscache.com/defaults/user_pic-225x225.png?v=2" style="width:100%;height:100%;"/>
+				</div>
+				<div style="width:100%;height:40px;background:gray;margin-top:-40px;border:1px solid white;position:relative;filter:alpha(opacity:80); opacity:0.8;">
+					<div style="line-height:40px;color:white;z-index:6;font-weight:bolder;text-align:center;">
+							上传头像
+					</div>
+				 </div>
+				 </div>
+				 <div>
+				  <a href="/users/show/36934849" class="btn btn-block row-space-top-4">查看个人资料</a>
+				 </div>
+				 </div>
+				 
+				 <div id="Content-right" style="width:74%;background:#F5F5F5;height:100%;float:right;border-color: 1px solid #DCE0E0;">
+				 	<div class="panel-header" style="margin-top: 10px;">修改我的资料</div>
+				 	<div style="float:left; width: 100%">
+				 					<div class="panel-body">
+						<div class="row row-condensed space-4">
+							<label class="text-right col-sm-3" for="user_first_name">
+								用户昵称： </label>
+							<div class="col-sm-9">
+								<input id="user_first_name" name="user[first_name]" size="30" type="text" >
+							</div>
+						</div>
+						<div class="row row-condensed space-4">
+							<label class="text-right col-sm-3" for="user_sex"> 我是 <i
+								class="icon icon-lock icon-ebisu" data-behavior="tooltip"
+								aria-label="保密"></i>
+							</label>
+							<div class="col-sm-9">
+
+								<div class="select">
+									<select id="user_sex" name="user[sex]"><option
+											value="" selected="selected">性别</option>
+										<option value="Male">男性</option>
+										<option value="Female">女性</option>
+										<option value="Other">其他</option></select>
+								</div>
+							</div>
+						</div>
+						<div class="row row-condensed space-4">
+							<label class="text-right col-sm-3" for="user_email">
+								电子邮件地址 <i class="icon icon-lock icon-ebisu"
+								data-behavior="tooltip" aria-label="保密"></i>
+							</label>
+							<div class="col-sm-9">
+							<input id="user_first_email" name="userEmail" size="30" type="text" ><a>绑定邮箱</a>
+							</div>
+						</div>
+
+						<div class="row row-condensed space-4">
+							<label class="text-right col-sm-3"
+								for="user_profile_info_current_city"> 个性签名：</label>
+							<div class="col-sm-9">
+	<textarea cols="40" id="user_profile_info_about"
+									name="user_profile_info[about]" rows="5"></textarea>
+
+
+							</div>
+						</div>
+
+						<div class="row row-condensed space-4">
+							<label class="text-right col-sm-3" for="user_profile_info_about">
+								自我介绍 </label>
+							<div class="col-sm-9">
+
+								<textarea cols="40" id="user_profile_info_about"
+									name="user_profile_info[about]" rows="5"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="panel-header" style="margin-top: 10px;">附加信息</div>
+						 					<div class="panel-body">
+						<div class="row row-condensed space-4">
+							<label class="text-right col-sm-3" for="user_first_name">
+								居住地址： </label>
+							<div class="col-sm-9">
+								<input id="user_Addr" name="user[addr]" size="30" type="text" >
+							</div>
+						</div>
+				
+
+						<div class="row row-condensed space-4">
+							<label class="text-right col-sm-3" for="user_email">
+								学校信息： <!-- <i class="icon icon-lock icon-ebisu"
+								data-behavior="tooltip" aria-label="保密"></i> -->
+							</label>
+							<div class="col-sm-9">
+							<input id="user_first_school" name="userSchool" size="30" type="text" >
+							</div>
+						</div>
+
+						<div class="row row-condensed space-4">
+				        <label class="text-right col-sm-3" for="user_emergency_contact_title">
+				          紧急联系人 <i class="icon icon-lock icon-ebisu" data-behavior="tooltip" aria-label="保密"></i>
+				        </label>
+				        <div class="col-sm-9">
+				          
+				      <div class="row-space-top-1">
+				          <a id="emergency_contact_add" class="emergency_contact_trigger" href="#">
+				            <i class="icon icon-add"></i>
+				            添加联系人
+				          </a>
+				      </div>
+				
+				          <div class="text-muted row-space-top-1">给我们的客户体验团队提供一个可信任的联系人，如果出现紧急情况，我们可以提醒该联系人。</div>
+				        </div>
+				      </div>
+								      <div id="emergency_contact_popout" style="display: none;">
+				            <div class="row row-condensed space-4">
+				        <label class="text-right col-sm-3" for="user_emergency_contact_name">
+				          姓名 
+				        </label>
+				        <div class="col-sm-9">
+				          
+				        <input id="user_emergency_contact_name" name="user_emergency_contact[name]" size="30" type="text">
+				
+				          
+				        </div>
+				      </div>
+				            <div class="row row-condensed space-4">
+				        <label class="text-right col-sm-3" for="user_emergency_contact_phone">
+				          电话 
+				        </label>
+				        <div class="col-sm-9">
+				          
+				        <input id="user_emergency_contact_phone" name="user_emergency_contact[phone]" size="30" type="text">
+				
+				          
+				        </div>
+				      </div>
+				            <div class="row row-condensed space-4">
+				        <label class="text-right col-sm-3" for="user_emergency_contact_email">
+				          电子邮件 
+				        </label>
+				        <div class="col-sm-9">
+				          
+				        <input id="user_emergency_contact_email" name="user_emergency_contact[email]" size="30" type="text">
+				
+				          
+				        </div>
+				      </div>
+				            <div class="row row-condensed space-4">
+				        <label class="text-right col-sm-3" for="user_emergency_contact_relationship">
+				          与您的关系 
+				        </label>
+				        <div class="col-sm-9">
+				          
+				        <input id="user_emergency_contact_relationship" name="user_emergency_contact[relationship]" size="30" type="text">
+				
+				          
+				        </div>
+				      </div>
+				    </div>
+
+						<div class="row row-condensed space-4">
+							<label class="text-right col-sm-3" for="user_profile_info_about">
+								自我介绍 </label>
+							<div class="col-sm-9">
+
+								<textarea cols="40" id="user_profile_info_about"
+									name="user_profile_info[about]" rows="5"></textarea>
+							</div>
+						</div>
+					</div>
+					
+				 	</div>
+				 	
+		<div class="foot_v2" style="float:inherit;">
+    <ul class="see_ul">
+        <li><a href="#ongo" class="icon_wx indexdialogpic" name="focusus"></a></li>
+        <li><a href="http://weibo.com/tspatch" target="_blank" class="icon_wb"></a></li>
+    </ul>
+        <ul class="foot_ul">
+            <li>
+            <span class="guide_T">关于我们</span>
+            <a href="aboutus.html" target="_blank">关于小猪</a>
+            <a href="contactus.html" target="_blank">联系我们</a>
+        </li>
+        
+        <li class="width_280">
+            <span class="guide_T">网站协议</span><br/>
+            <a href="help/service.html" target="_blank">服务协议</a> 
+            <a href="help/landlordRule.html" target="_blank">房东规则</a>
+            <a href="help/tenantRule.html" target="_blank">房客规则</a>
+            <a href="help/auditRule.html" target="_blank">发布房源审核细则</a>
+            <a href="help/privacy.html" target="_blank">隐私保护</a>
+            <a href="help/copyright.html" target="_blank">版权声明</a>
+            <a href="help/disclaimer.html" target="_blank">免责声明</a>
+            <a href="help/commentRule.html" target="_blank">点评发布规则</a>
+        </li>
+        <li class="width_100 bigFont">
+            <span class="guide_T">客服邮箱</span><br/>
+            service@tspatch.com
+        </li>
+    </ul>
+    
+  
+   
+        <div class="foot_btm">许可证号：<a target="_blank" href="http://www.miibeian.gov.cn" rel="nofollow">粤ICP证1405000号</a> &nbsp;&nbsp; <a href="http://www.anquan.org/s/www.tspatch.com" |="" name=" " rel="nofollow" target="_blank">安全联盟</a> &nbsp;&nbsp; 粤公网安备41010802010350号 &nbsp;&nbsp; 深圳时间碎片科技有限公司
+    </div>
+</div>
+
+
+				</div>
+			</div>
+		</div>
+
+
+<input type="hidden" name="actionName" id="actionName" value="Front_Index"/>
+<!-- Piwik --> 
+<!-- End Piwik Tracking Code -->
+<input type="hidden" id="piwik_trigger" value="1">
+
+<input type="hidden" id="pagetype" value="Front_Index">
+
+</div>
+
+<input type='hidden' id='defaultCityShowStr' value="请选择城市或目的地"/>
+<input type='hidden' id='defaultstartdate' value=""/>
+<input type='hidden' id='defaultenddate' value=""/>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/tsp.js"></script>
+<script type="text/javascript" src="js/lazyload.js"></script>
+<script type="text/javascript" src="js/tst.js"></script>
+<script type="text/javascript">
+	$("#emergency_contact_add").click(function(){
+		$("#emergency_contact_popout").show();
+	});
+</script>
+</body>
+</html>
