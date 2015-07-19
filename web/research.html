@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.bigautocomplete.js"></script>
+<script type="text/javascript">
+$(function(){
+
+	$("#tt").bigAutocomplete({
+		width:543,
+		data:[{title:"中国好声音",result:{ff:"qq"}},
+		{title:"时间真是一把杀猪刀"},
+		{title:"时间过得真快"},
+		{title:"时间是个刽子手"},
+		{title:"时间真的真的过得太快了"},
+		{title:"时间时间啊"}],
+		callback:function(data){
+			alert(data.title);	
+		}
+	});
+
+})
+</script>
+
+</head>
+<body>
+
+<style type="text/css">
+*{margin:0;padding:0;list-style-type:none;}
+a,img{border:0;}
+.demo{width:720px;margin:30px auto;}
+.demo h2{font-size:16px;color:#3366cc;height:30px;}
+.demo li{float:left;}
+.text,.button{background:url(http://su.bdimg.com/static/superpage/img/spis_031ddf34.png) no-repeat;}
+.text{width:529px;height:22px;padding:4px 7px;padding:6px 7px 2px\9;font:16px arial;border:1px solid #cdcdcd;border-color:#9a9a9a #cdcdcd #cdcdcd #9a9a9a;vertical-align:top;outline:none;margin:0 5px 0 0;}
+.button{width:95px;height:32px;padding:0;padding-top:2px\9;border:0;background-position:0 -35px;background-color:#ddd;cursor:pointer}
+@charset "utf-8";
+.bigautocomplete-layout{display:none;background-color:#FFFFFF;border:1px solid #BCBCBC;position:absolute;z-index:100;max-height:220px;overflow-x:hidden;overflow-y:auto; }
+.bigautocomplete-layout table{border-collapse:collapse;border-spacing:0;background:none repeat scroll 0 0 #FFFFFF;width:100%;cursor:default;}
+.bigautocomplete-layout table tr{background:none repeat scroll 0 0 #FFFFFF;}
+.bigautocomplete-layout .ct{background:none repeat scroll 0 0 #D2DEE8 !important;}
+.bigautocomplete-layout div{word-wrap:break-word;word-break:break-all;padding:1px 5px;}
+
+</style>
+
+<div class="demo">
+	<h2></h2>
+	<form action="research.html" method="post" name="searchform" id="searchform" class="searchinfo">
+		<ul>
+			<li><input type="text" id="tt" value="" class="text" /></li>
+			<li><input type="submit" value="搜索" class="button" /></li>
+		</ul>
+	</form>
+</div>
+
+</body>
+</html>
